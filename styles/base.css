@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+:root {
+  --clr-background: #fbe1c1;
+  --clr-text: #212529;
+  --clr-text-light: #f1f1f1;
+  --clr-container-bg: #af4300;
+}
+
+body {
+
+    min-height: 100vh;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--clr-background);
+    box-sizing: border-box;
+    
+
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+  Navigation bar
+   ========================================================================== */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+
+#course-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--clr-text);
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+    
+
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--clr-container-bg);
+    width: 100%;
+    flex-grow: 1;
+}
+
+header nav ul li:hover {
+    color: var(--clr-text-light); /* Highlight with primary color */
+    transform: scale(1.15); /* Make the icon slightly larger */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-decoration: underline;
+   
+}
+
+
+header nav ul {
+    display: flex;
+    gap: 10rem;
+    color: var(--clr-text-light);
+    font-weight: 500;
+}
+/* ==========================================================================
+  Main
+   ========================================================================== */
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+
+.card {
+    background-color: var(--clr-container-bg);
+    padding: 2rem;
+    margin: 4rem 0 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--clr-text-light);
+}
+
+.about-me {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+
+}
+.about-me h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--clr-text);
+    margin-bottom: 1rem;
+}
+.about-me img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+    margin-left: 1rem;
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--clr-text-light);
+    
+}
+.country {
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 2rem;
+}
+.country img {
+    width: 200px;
+    height: 150px;
+    border-radius: 25%;
+    margin: 1rem 3rem 1rem 0;
+
+}
+
+.card hr {
+    border: 1px solid var(--clr-text-light);
+    margin: 0 0 1rem 0;
+    width: 50%;
+}
+
+/* ==========================================================================
+  Footer
+   ========================================================================== */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--clr-container-bg);
+    color: var(--clr-text-light);
+    font-size: 1rem;
+    font-weight: 350;
+}
