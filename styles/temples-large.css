@@ -1,0 +1,44 @@
+@media (min-width: 800px) {
+/* ==========================================================================
+   Large Screen Styles
+   ========================================================================== */
+	#menu-button {
+		display: none; 
+	}
+
+	nav {
+	
+		 
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#nav-links {
+		display: flex; /* Show nav links */
+		flex-direction: row;
+		list-style: none;
+		position: static; 
+		background: none;
+	}
+
+	#nav-links a {
+		padding: 0.5rem 1rem;
+	}
+
+
+	/* Main Content Gallery for Larger Views */
+	main {
+		max-width: 1200px;
+		margin: 0 auto; /* Center the main content */
+	}
+
+	.gallery {
+		
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+    .gallery img {
+        width: 100%;
+        height: 300px;
+    }
+}
