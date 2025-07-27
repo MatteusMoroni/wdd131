@@ -1,0 +1,51 @@
+@media (min-width: 800px) {
+/* ==========================================================================
+   Large Screen Styles
+   ========================================================================== */
+	#menu-button {
+		display: none; 
+	}
+
+	nav {
+	
+		 
+		display: flex;
+		justify-content: space-between;
+	}
+
+    #nav-links {
+        position: static; /* Remove absolute positioning */
+        top: auto;
+        left: auto;
+        width: auto;
+        background-color: transparent; /* Remove background if desired for desktop */
+        flex-direction: row; /* Arrange links horizontally */
+        display: flex !important; /* Always show on desktop, override .open behavior */
+        max-height: none; /* Remove height constraint */
+        opacity: 1; /* Always visible */
+        transition: none; /* Disable animation properties for desktop */
+        margin-left: auto; /* Push nav to the right if title is on left */
+    }
+
+
+	#nav-links a {
+		padding: 0.5rem 1rem;
+	}
+
+
+	/* Main Content Gallery for Larger Views */
+	main {
+		max-width: 1200px;
+		margin: 0 auto; /* Center the main content */
+	}
+
+	.gallery {
+		
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+    .gallery img {
+        width: 100%;
+        height: 300px;
+    }
+}

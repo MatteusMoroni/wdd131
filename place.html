@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 – Dynamic Web Fundamentals – Matteus Moroni</title>
+        <meta name="description" content="This is an activity from the WDD 131 – Dynamic Web Fundamentals course: a homepage introducing Matteus Moroni.">
+        <meta name="author" content="Matteus Moroni">
+        <link rel="stylesheet" href="styles/place.css">
+
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Place Title</h1> </header>
+        <main>
+            <figure>
+                <picture>
+                    <source srcset="https://turismodenatureza.com.br/wp-content/uploads/2023/05/melhores-praias-do-espirito-santo.webp" media="(min-width: 768px)">
+                    
+                    <img src="images/your-small-image.webp" alt="A descriptive view of your chosen place">
+                </picture>
+                <figcaption>A caption for your image, like 'Christ the Redeemer, Rio de Janeiro'.</figcaption>
+            </figure>
+
+            <section class="data-card">
+                <h2>Data</h2>
+                <div>
+                    <p><strong>Area:</strong> <span id="data-area">Value</span></p>
+                    <p><strong>Population:</strong> <span id="data-population">Value</span></p>
+                    <p><strong>Capital:</strong> <span id="data-capital">Value</span></p>
+                    <p><strong>Languages:</strong> <span id="data-languages">Value</span></p>
+                    <p><strong>Currency:</strong> <span id="data-currency">Value</span></p>
+                    <p><strong>Time Zone:</strong> <span id="data-timezone">Value</span></p>
+                    <p><strong>Calling Code:</strong> <span id="data-callingcode">Value</span></p>
+                    <p><strong>Internet TLD:</strong> <span id="data-tld">Value</span></p>
+                </div>
+            </section>
+
+            <section class="weather-card">
+                <h2>Weather</h2>
+                <span><img src="images/reshot-icon-weather-X3N7PHUCLR.svg" alt=""></span>
+                <div>
+                    <p><strong>Temperature:</strong> <span id="weather-temp">10°C</span></p>
+                    <p><strong>Conditions:</strong> <span id="weather-conditions">Partly Cloudy</span></p>
+                    <p><strong>Wind:</strong> <span id="weather-wind">5 km/h</span></p>
+                    <p><strong>Wind Chill:</strong> <span id="weather-windchill">N/A</span></p>
+                </div>
+            </section>
+        </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+
+    </footer>
+    </body> 
+</html>    

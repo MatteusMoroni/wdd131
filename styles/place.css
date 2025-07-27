@@ -1,0 +1,113 @@
+/* --- Root Variables --- */
+/* Define your color scheme and fonts here */
+:root {
+  --primary-color: #9A2441; /* A reddish color from the example */
+  --secondary-color: #006A4E; /* A greenish color from the example */
+  --accent-color: #F1F2EB; /* A light background for cards */
+  --text-color: #333333;
+  --font-family: 'Helvetica', sans-serif;
+}
+
+/* --- Global Styles --- */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  max-width: 960px; /* Constrains the width on very large screens */
+  margin: 0 auto; /* Centers the content */
+}
+
+/* --- Header & Footer Styles --- */
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.2rem;
+}
+
+/* --- Main Content & Card Styles (Mobile First) --- */
+main {
+  padding: 1rem;
+}
+
+/* Style for both data and weather cards */
+.data-card, .weather-card {
+  background-color: var(--accent-color);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  display: flex; /* Helps with icon alignment */
+  align-items: center;
+}
+
+/* Mobile Weather Icon using SVG */
+.weather-card h2::before {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Hero Image Style */
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+}
+
+
+/* --- Media Query for Desktop View --- */
+@media (min-width: 768px) {
+  /* Change the layout of main content on larger screens */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns: Data | Image | Weather */
+    gap: 1rem;
+  }
+  
+  /* Order the items in the grid */
+  .data-card {
+    grid-column: 1 / 2;
+  }
+
+  figure {
+    grid-column: 2 / 3;
+  }
+
+  .weather-card {
+    grid-column: 3 / 4;
+  }
+
+  /* Desktop Weather Icon using Emoji */
+  .weather-card h2::before {
+    content: '🌤️'; /* Replace with an emoji that matches your weather */
+    font-size: 2rem; /* Adjust emoji size */
+    margin-right: 10px;
+  }
+
+  .weather-card span img {
+    display: none; /* Hide the SVG icon on desktop */
+  }
+}
