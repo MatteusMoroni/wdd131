@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * Function to dynamically update the copyright year in the footer.
-     * This demonstrates DOM selection and modification.
+    
      */
     function updateCopyrightYear() {
         const yearSpan = document.querySelector('footer p');
@@ -83,8 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const src = img.getAttribute('data-src');
 
                         img.setAttribute('src', src);
-                        img.classList.add('fade-in'); // Optional: for a fade-in effect
-
+                        
                         // Stop observing the image once it has loaded
                         observer.unobserve(img);
                     }
