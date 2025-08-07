@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio showcasing projects and skills.">
+    <title>My Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="container">
+            <a href="main.html" class="logo">Matteus Moroni</a>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my journey and work in web development.</p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://i.ibb.co/Fk73RD3x/1754591029021.jpg" alt="1754591029021" class="about-image" border="0">
+                <p>
+                    I am a passionate web developer with a love for creating clean, efficient, and user-friendly websites. I specialize in front-end technologies and am always eager to learn and adapt to new challenges. This portfolio is a space where I share the projects I'm proud of.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <article class="project-card">
+                    <img src="images/2.png" alt="Placeholder for WA Performance Group" class="project-image">
+                    <div class="project-info">
+                        <h3>WA Performance Group</h3>
+                        <p>Developed a responsive website for painting contractor WA Performance Group. It showcases services and generates leads, providing a seamless user experience on both desktop and mobile devices.</p>
+                        <a href="projects.html#wa-performance-group-project">View Project</a>
+                    </div>
+                </article>
+                <!-- Project Card 2 -->
+                <article class="project-card">
+                    <img src="images/1.png" alt="Placeholder for CT Patrick Ramos" class="project-image">
+                    <div class="project-info">
+                        <h3>CT Patrick Ramos</h3>
+                        <p>This is a dynamic website for the fight gym, CT Patrick Ramos. It's designed to attract new members, showcasing training schedules, coach profiles, and photo galleries of the facilities and fighters in action.</p>
+                        <a href="projects.html#ct-patrick-ramos-project">View Project</a>
+                    </div>
+                </article>
+                <!-- Project Card 3 -->
+                <article class="project-card">
+                    <img src="images/3.png" alt="Placeholder for Project 3" class="project-image">
+                    <div class="project-info">
+                        <h3>Login page </h3>
+                        <p>A clean and simple login page with a focus on user experience. Fully responsive, it provides a seamless and secure authentication process on any device, from desktops to mobile screens.</p>
+                        <a href="projects.html#login-page-project">View Project</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="references.html">References</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script tag for future JavaScript file -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
