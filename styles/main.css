@@ -243,7 +243,7 @@ header nav {
 }
 
 .submit-button:hover {
-    background-color: #2980b9; /* A darker blue */
+    background-color: #2980b9;
 }
 
 /* --- Footer --- */
@@ -414,7 +414,7 @@ footer {
 
 .contact-details li {
     margin-bottom: 1rem;
-    word-break: break-all; /* Prevents long links from overflowing */
+    word-break: break-all; 
 }
 
 #contact-page #contact-form {
@@ -501,6 +501,6 @@ footer {
         grid-template-columns: 1fr;
     }
     .project-item:nth-child(even) .project-item-image {
-        order: 0; /* Reset order for mobile */
+        order: 0; 
     }
 }
